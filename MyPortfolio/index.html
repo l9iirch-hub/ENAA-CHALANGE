@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Houssam Elarasoui | Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <div class="page">
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <div class="logo-badge" id="logo-initial">HE</div>
+        <div class="logo-text">
+          <span id="user-name">Houssam Elarasoui</span>
+          <span id="user-role">Full Stack Developer</span>
+        </div>
+      </div>
+      <nav>
+        <a data-scroll="#projects">Projects</a>
+        <a data-scroll="#skills">Skills</a>
+        <a data-scroll="#experience">Experience</a>
+        <a data-scroll="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" type="button">
+          <span id="theme-icon">☾</span>
+          <span id="theme-label">Dark</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- HERO CENTERED -->
+    <main>
+      <section class="hero reveal" id="top">
+        <div class="hero-inner">
+          <div class="hero-avatar">
+                <img src="img/img1.png" alt="Houssam Elarasoui" />
+                </div>
+
+          <h1 class="hero-name" id="hero-name-text">Houssam Elarasoui</h1>
+          <div class="hero-role" id="hero-role-text">Développeur Full Stack</div>
+
+          <div class="hero-status">
+            <span class="hero-status-dot"></span>
+            <span id="hero-status-text">Looking for a full-stack internship (stage)</span>
+          </div>
+
+          <p class="hero-bio" id="hero-bio">
+            I'm Houssam, a self-taught full stack developer from Beni Mellal.
+            I enjoy building modern web apps with React, Next.js, Node.js and Laravel,
+            and I'm always pushing myself to learn more every day.
+          </p>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item" id="meta-location">📍 Beni Mellal, Morocco</div>
+            <div class="hero-meta-item" id="meta-experience">⏱ 2+ years learning & practice</div>
+            <div class="hero-meta-item" id="meta-stack">⚙️ React · Next.js · Node.js · Laravel</div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-scroll="#projects" type="button">
+              View projects ↗
+            </button>
+            <button class="btn" data-scroll="#contact" type="button">
+              Contact me ✉
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <div class="section-header">
+          <h2 class="section-title"><span>//</span> Projects</h2>
+          <p class="section-sub">Projects will appear here as you build them.</p>
+        </div>
+
+        <div class="project-toolbar">
+          <button class="project-filter active" data-filter="all">All</button>
+          <button class="project-filter" data-filter="featured">Featured</button>
+          <button class="project-filter" data-filter="web">Web</button>
+          <button class="project-filter" data-filter="other">Other</button>
+        </div>
+
+        <div class="cards-grid" id="projects-grid">
+          <!-- dynamic via app.js -->
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="reveal">
+        <div class="section-header">
+          <h2 class="section-title"><span>//</span> Skills</h2>
+          <p class="section-sub">Languages, frameworks & tools I use.</p>
+        </div>
+        <div class="pill-row" id="skills-row"></div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="reveal">
+        <div class="section-header">
+          <h2 class="section-title"><span>//</span> Experience</h2>
+          <p class="section-sub">Learning path & practical experience.</p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <div class="section-header">
+          <h2 class="section-title"><span>//</span> Contact</h2>
+          <p class="section-sub">Let’s connect and build something.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">
+                <a id="contact-email-link" href="mailto:houssamelarsaoui@gmail.com">
+                  houssamelarsaoui@gmail.com
+                </a>
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Location</span>
+              <span class="contact-value" id="contact-location">
+                Beni Mellal, Morocco
+              </span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Availability</span>
+              <span class="contact-value" id="contact-freelance">
+                Available for stage & freelance
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-links" id="contact-links"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> <span id="footer-name">Houssam Elarasoui</span>. Built with JS & jQuery.
+    </footer>
+  </div>
+
+  <!-- jQuery + JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id_eleve": 1,
+    "nom": "ayoub",
+    "present": false,
+    "competences": {
+      "HTML": "Bon",
+      "CSS": "Bon",
+      "JS": "3ayan"
+    }
+  },
+  {
+    "id_eleve": 2,
+    "nom": "houssam",
+    "present": false,
+    "competences": {
+      "HTML": "Excellent",
+      "CSS": "Excellent",
+      "JS": "Excellent"
+    }
+  },
+  {
+    "id_eleve": 3,
+    "nom": "hassan",
+    "present": false,
+    "competences": {
+      "HTML": "3ayan",
+      "CSS": "3ayan",
+      "JS": "3ayan"
+    }
+  }
+]
